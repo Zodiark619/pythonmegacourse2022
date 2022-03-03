@@ -1,0 +1,63 @@
+
+
+{%extends 'base.html'%}
+{%block title%}
+
+  <title>Herry Wijaya's Personal Website - Project</title>
+{%endblock%}
+
+
+
+
+
+
+
+
+
+
+
+{%block content%}
+
+<div class="section-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+          <h1 class="text-center">Project Overview</h1>
+          <p>There are two portfolios featured in this page. The first one is Taskmate, it is a to-do list application that records your ongoing and finished quests. The other one is my own personal website. It shows my biodata, past portfolios, and Django Rest usage.</p>
+          
+          <div class="section-container-spacer">
+            <img src="{{url_for('static',filename='assets/images/portfolio-taskmate.jpg')}}" alt="" class="img-responsive reveal-content" data-action="zoom">
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              <img src="{{url_for('static',filename='assets/images/portfolio-taskmate1.jpg')}}" alt="" class="img-responsive reveal-content" data-action="zoom">
+            </div>
+            <div class="col-xs-6">
+              <img src="{{url_for('static',filename='assets/images/portfolio-taskmate3.jpg')}}" alt="" class="img-responsive reveal-content" data-action="zoom">
+            </div>
+          </div>
+       </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-container">
+    <div class="container">
+      <div class="row section-container-spacer">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+          <h2 class="text-center">More</h2>
+          <div class="section-container-spacer">
+            
+            <p>There are also numerous mini-application on my github. Two notable application that you should check out are Sentiment Analysis using VSM and LSTM and also
+            Information System for Warehouse Inventory Management.</p>
+          </div>  
+          <img src="{{url_for('static',filename='assets/images/portfolio-taskmate2.jpg')}}" alt="" class="img-responsive reveal-content" data-action="zoom">
+        </div>  
+      </div>
+    </div>
+  </div>
+
+{%endblock%}
+
+
