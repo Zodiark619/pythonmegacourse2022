@@ -1,0 +1,24 @@
+{%extends 'base.html'%}
+
+{%block content%}
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Type</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Created</th>
+      </tr>
+    </thead>
+    <tbody>
+        {%for a in object_list%}
+      <tr>
+        <th scope="row">{{a.name}}</th>
+        <td>{{a.inventory_verbose}}</td>
+        <td>{{a.quantity}}</td>
+        <td>{{a.date_created}}</td>
+      </tr>
+     {%endfor%}
+    </tbody>
+  </table>
+{%endblock%}
