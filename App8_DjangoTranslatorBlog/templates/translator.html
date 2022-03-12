@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="container">
+    <h1>Translate to Japanese</h1>
+    <h3>Input on the left and then click submit</h3>
     <form action="{% url 'translator_view' %}" method="post">
         {% csrf_token %}
         <div class="row">

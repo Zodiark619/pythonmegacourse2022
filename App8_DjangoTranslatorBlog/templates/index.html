@@ -1,6 +1,8 @@
 {%extends 'base.html'%}
 
 {%block content%}
+<div class='container'>
+  
 <table class="table">
     <thead>
       <tr>
@@ -11,7 +13,7 @@
       </tr>
     </thead>
     <tbody>
-        {%for a in object_list%}
+        {%for a in all_inventory%}
       <tr>
         <th scope="row">{{a.name}}</th>
         <td>{{a.inventory_verbose}}</td>
@@ -21,4 +23,5 @@
      {%endfor%}
     </tbody>
   </table>
+</div>
 {%endblock%}
