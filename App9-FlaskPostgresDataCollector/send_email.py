@@ -8,8 +8,8 @@ gil_500000=['random grimoire','class specific chest','serpentarius','24000 gil',
 gil_1000000=['golden ticket','5x random loot','500000 gil','steingrat bow','zodiac spear','genji gloves','5 gil','class specific chest']
 
 def send_email(email,gil):
-    from_email='alexeipetronov@gmail.com'
-    from_password='kmzway87aa'
+    from_email='your-email'
+    from_password='your-password'
     to_email=email
     
     if int(gil)<=1000:
